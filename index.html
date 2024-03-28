@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/375cfc3d13.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <aside>
+      <div class="left">
+        <div>
+          <!--TODO -------------- NAVIGATION --------------  -->
+          <nav>
+            <ul>
+              <li onclick="navigate('home')">Home</li>
+              <li onclick="navigate('search')">Search</li>
+              <li onclick="navigate('categories')">Categories</li>
+              <li onclick="navigate('areas')">Area</li>
+              <li onclick="navigate('ingredients')">Ingredients</li>
+              <li onclick="navigate('contact')">Contact</li>
+            </ul>
+          </nav>
+          <!--TODO -------------- NAVIGATION --------------  -->
+
+          <!--TODO -------------- COPYRIGHTS --------------  -->
+          <div class="copyrights">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
+              </li>
+            </ul>
+            <p>Copyright &copy; 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+        <!--TODO -------------- COPYRIGHTS --------------  -->
+      </div>
+      <div class="right">
+        <img src="./assets/logo.png" alt="Yummy" />
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <form id="search" class="container d-flex flex-column flex-sm-row gap-3 w-100 d-none">
+        <input type="search" placeholder="Search by name" class="form-control" />
+        <input type="search" placeholder="Search by first letter" maxlength="1" class="form-control" />
+      </form>
+      <div class="container flex-column">
+        <div id="spinner" class="d-none">
+          <span></span>
+        </div>
+
+        <div id="mainContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4"></div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
